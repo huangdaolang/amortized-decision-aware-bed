@@ -1,0 +1,17 @@
+name: "tal_synth"
+
+min_n_initial_context: 5
+max_n_initial_context: 10  # This choice is important
+n_context: None
+
+n_query: 300  # query pool size
+
+n_decision: 1  # number of decisions
+
+T: 1  # horizon
+
+dim_x: 1  # dimension of x
+dim_y: 1  # dimension of y
+
+
+std: 0.1  # noise

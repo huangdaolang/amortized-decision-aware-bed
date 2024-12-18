@@ -1,0 +1,15 @@
+embedding_way: 'sum'
+
+dim_embedding: 32  # dimension of embedding
+embedding_depth: 4  # depth of embedding
+
+num_layers: 6  # number of TFM layers
+num_heads: 8  # number of TFM heads
+
+dim_feedforward: 128  # dimension of feedforward layer
+dropout: 0.0  # dropout rate
+
+dim_x: ${dataset.dim_x}
+dim_y: ${dataset.dim_y}
+
+T: ${dataset.T}

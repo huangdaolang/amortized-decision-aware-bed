@@ -1,0 +1,19 @@
+name: "hpo_xgboost"
+
+meta_dataset: "xgboost"
+
+min_n_initial_context: 5
+max_n_initial_context: 10
+
+n_context: null
+n_query: 100  # query pool size, need to specify if the dataset size is large, otherwise null
+n_target: 100  # number of targets used for regression training
+
+T: 10  # horizon
+
+dim_x: 16  # dimension of x
+dim_y: 1  # dimension of y
+
+k: 3  # top-K
+
+epsilon: 0.2  # exploration rate
