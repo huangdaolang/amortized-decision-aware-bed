@@ -1,0 +1,29 @@
+defaults:
+  - _self_
+  - nn: tndp_topk
+  - dataset: hpo/rpart
+
+steps: 100000
+
+batch_size: 16
+
+learning_rate: 5e-4
+
+gamma: 0.99
+
+device: 'cpu'
+
+checkpoint: True
+checkpoint_interval: 2000
+
+print_freq: 200
+
+
+##### W&B config #####
+wandb:
+  group: ${dataset.name}
+  project: "amortize-targeted-bed"
+  use_wandb: False
+  run_name: ${dataset.name}-${dataset.meta_dataset}-${now:%Y-%m-%d_%H-%M-%S}
+  tags:
+    - "dataset=${dataset.name}"

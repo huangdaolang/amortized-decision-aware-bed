@@ -1,0 +1,17 @@
+name: decision-aware-abed
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - pip
+  - pip:
+    - torch==2.0.1
+    - hydra-core==1.3.2
+    - wandb==0.16.5
+    - gpytorch==1.11
+    - attrdict==2.0.1
+    - scipy==1.12.0
+    - pandas==2.2.2
